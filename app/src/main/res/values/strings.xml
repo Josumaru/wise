@@ -7,4 +7,18 @@
     <string name="title_hospital">Hospital</string>
     <string name="title_history">History</string>
     <string name="title_setting">Setting</string>
+    <string name="desc_click_to_caputre">Click to Caputre</string>
+    <string name="failed_to_start_camera">Failed to start camera</string>
+    <string name="permission_request_granted">Permission request granted</string>
+    <string name="permission_request_denied">Permission request denied</string>
+    <string name="wound_scanner">Wound Scanner</string>
+    <string name="click_to_back">Click to back</string>
+    <string name="click_to_activate_flash">Click to Activate Flash</string>
+    <string name="no_image_selected">No image selected</string>
+    <string name="gallery_preview">Gallery Preview</string>
+    <string name="image_saved_to_gallery">Image Saved to Gallery</string>
+    <string name="failed_to_save_image_to_gallery">Failed to Save Image to Gallery.</string>
+    <string name="scan_result">Scan Result</string>
+    <string name="image_result">Image Result</string>
+    <string name="image_not_found">Image not Found</string>
 </resources>
