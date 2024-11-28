@@ -12,4 +12,16 @@ data class HistoryEntity(
 
     @ColumnInfo(name = "image")
     val image: String? = null,
+
+    @ColumnInfo(name = "title")
+    val title: String? = null,
+
+    @ColumnInfo(name = "injury")
+    val injury: String? = null,
+
+    @ColumnInfo(name = "date")
+    val date: String? = null,
+
+    @ColumnInfo(name = "hospital")
+    val hospital: String? = null,
 )

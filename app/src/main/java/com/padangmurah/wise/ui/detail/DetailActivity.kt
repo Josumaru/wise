@@ -33,8 +33,6 @@ class DetailActivity : AppCompatActivity() {
 
         if (currentImageUri != null) {
             binding.ivImage.setImageURI(currentImageUri)
-            Toast.makeText(this, currentImageUri.toString(), Toast.LENGTH_SHORT).show()
-
         } else {
             Toast.makeText(this, getString(R.string.image_not_found), Toast.LENGTH_SHORT).show()
         }

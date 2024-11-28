@@ -21,4 +21,7 @@
     <string name="scan_result">Scan Result</string>
     <string name="image_result">Image Result</string>
     <string name="image_not_found">Image not Found</string>
+    <string name="history_title">History Title</string>
+    <string name="calendar_icon">Calendar Icon</string>
+    <string name="hospital_icon">Hospital Icon</string>
 </resources>
