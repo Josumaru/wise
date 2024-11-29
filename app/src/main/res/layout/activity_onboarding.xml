@@ -7,27 +7,89 @@
     android:layout_height="match_parent"
     tools:context=".ui.onboarding.OnboardingActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:id="@+id/iv_onboarding"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This is Onboarding Activity"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/onboarding_image"
+        android:src="@drawable/img_onboarding_first"
+        app:layout_constraintBottom_toTopOf="@+id/cv_onboarding_card"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btn_get_started"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        app:layout_constraintVertical_bias="0"
-        android:text="@string/title_home"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="32dp"
+        android:paddingHorizontal="16dp"
+        android:backgroundTint="@color/md_theme_onboarding_card"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView" />
+        android:id="@+id/cv_onboarding_card">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_onboarding_card_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@tools:sample/full_names"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/tv_onboarding_card_subtitle"
+                app:layout_constraintTop_toBottomOf="@id/tv_onboarding_card_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_theme_foreground_text"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                tools:text="@tools:sample/lorem/random"
+                android:lines="3"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_onboarding_bullet_first"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:backgroundTint="@color/md_theme_primary"
+                app:cardCornerRadius="@dimen/bullet_corner_radius"
+                android:layout_marginTop="42dp"
+                app:cardElevation="0dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_onboarding_card_subtitle" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_onboarding_bullet_second"
+                android:layout_width="8dp"
+                android:layout_marginTop="42dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/md_theme_secondaryContainer"
+                app:cardCornerRadius="@dimen/bullet_corner_radius"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_onboarding_card_subtitle" />
+
+            <com.padangmurah.wise.ui.common.view.CustomButton
+                android:id="@+id/btn_onboarding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:layout_marginVertical="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cv_onboarding_bullet_first" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
