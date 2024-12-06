@@ -26,4 +26,8 @@
     <string name="hospital_icon">Hospital Icon</string>
     <string name="next">Next</string>
     <string name="onboarding_image">Onboarding Image</string>
+    <string name="hospital_images">Hospital Images</string>
+    <string name="nearby">Nearby</string>
+    <string name="nearby_hospitals">Nearby Hospitals</string>
+    <string name="history">History</string>
 </resources>

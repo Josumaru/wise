@@ -19,8 +19,8 @@ class HistoryAdapter :
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val anime = getItem(position)
-        holder.bind(anime)
+        val history = getItem(position)
+        holder.bind(history)
     }
 
 
