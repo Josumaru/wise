@@ -6,8 +6,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.padangmurah.wise.data.source.local.entity.history.HistoryEntity
 import com.padangmurah.wise.databinding.ItemHistoryBinding
+import com.padangmurah.wise.util.DateFormatter
 
 class HistoryAdapter :
     ListAdapter<HistoryEntity, HistoryAdapter.MyViewHolder>(DIFF_CALLBACK) {
@@ -28,10 +30,14 @@ class HistoryAdapter :
         binding.root
     ) {
         fun bind(history: HistoryEntity) {
-            binding.tvTitle.text = history.title
-            binding.tvSubtitle.text = history.injury
-            binding.tvDate.text = history.date
-            binding.tvHospital.text = history.hospital
+            val readableDate = DateFormatter.formatReadableDate(history.createdAt)
+            binding.tvTitle.text = history.id
+            binding.tvDate.text = readableDate
+            binding.tvHospital.text = history.treatment.trimIndent()
+
+            Glide.with(itemView.context).apply {
+                load(history.photo).into(binding.ivImage)
+            }
         }
     }
 

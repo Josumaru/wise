@@ -30,4 +30,9 @@
     <string name="nearby">Nearby</string>
     <string name="nearby_hospitals">Nearby Hospitals</string>
     <string name="history">History</string>
+    <string name="burns">Burns</string>
+    <string name="you_have_a_burns_in_your_skin">You have a Burns in your skin</string>
+    <string name="add_to_medical_record">Add to Medical Record</string>
+    <string name="no_data">No Data</string>
+    <string name="skin_image">Skin Image</string>
 </resources>

@@ -1,6 +1,5 @@
 package com.padangmurah.wise.util
 
-import android.content.ContentUris
 import android.content.ContentValues
 import android.content.Context
 import android.net.Uri

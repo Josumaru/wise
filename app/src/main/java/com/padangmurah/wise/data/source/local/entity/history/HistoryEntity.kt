@@ -6,22 +6,20 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "history")
 data class HistoryEntity(
-    @PrimaryKey
+
+    @PrimaryKey()
     @ColumnInfo(name = "id")
-    val id: Int? = null,
+    val id: String = "",
 
-    @ColumnInfo(name = "image")
-    val image: String? = null,
+    @ColumnInfo(name = "treatment")
+    val treatment: String,
 
-    @ColumnInfo(name = "title")
-    val title: String? = null,
+    @ColumnInfo(name = "diagnosis_id")
+    val diagnosisId: String,
 
-    @ColumnInfo(name = "injury")
-    val injury: String? = null,
+    @ColumnInfo(name = "photo")
+    val photo: String? = null,
 
-    @ColumnInfo(name = "date")
-    val date: String? = null,
-
-    @ColumnInfo(name = "hospital")
-    val hospital: String? = null,
+    @ColumnInfo(name = "created_at")
+    val createdAt: String
 )

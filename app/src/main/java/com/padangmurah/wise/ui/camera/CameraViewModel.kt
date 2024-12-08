@@ -12,6 +12,4 @@ class CameraViewModel(private val historyRepository: HistoryRepository) : ViewMo
     private val _error = MutableLiveData<String>()
     val error: LiveData<String> = _error
 
-
-
 }

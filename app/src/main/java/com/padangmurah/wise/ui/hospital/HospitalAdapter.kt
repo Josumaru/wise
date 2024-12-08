@@ -33,17 +33,8 @@ class HospitalAdapter :
         @SuppressLint("SetTextI18n")
         fun bind(hospital: HospitalEntity) {
             binding.tvHospitalName.text = hospital.name
-            binding.tvHospitalAddress.text = hospital.address
             binding.tvHospitalDistance.text = "${hospital.distance.toString()} KM"
-            binding.tvStatus.text = hospital.status
-
-            Glide.with(itemView.context)
-                .load(hospital.image)
-//                .apply(
-//                    RequestOptions.placeholderOf(R.drawable.ic_placeholder)
-//                        .error(R.drawable.ic_error)
-//                )
-                .into(binding.ivHospital)
+            binding.tvStatus.text = if((hospital.distance ?: 0.0) <= 5.0) "Nearby" else "Far"
         }
 
     }

@@ -1,27 +1,31 @@
 package com.padangmurah.wise.data.source.local.entity.hospital
+
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "hospital")
-data class HospitalEntity
-    (
-    @PrimaryKey
-    @ColumnInfo(name = "id")
-    val id: Int? = null,
+data class HospitalEntity(
 
-    @ColumnInfo(name = "image")
-    val image: String? = null,
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id")
+    val id: Int = 0,
 
     @ColumnInfo(name = "name")
-    val name: String? = null,
+    val name: String,
 
-    @ColumnInfo(name = "address")
-    val address: String? = null,
+    @ColumnInfo(name = "latitude")
+    val latitude: Double? = null,
+
+    @ColumnInfo(name = "longitude")
+    val longitude: Double? = null,
 
     @ColumnInfo(name = "distance")
     val distance: Double? = null,
 
-    @ColumnInfo(name = "status")
-    val status: String? = null,
+    @ColumnInfo(name = "website")
+    val website: String? = null,
+
+    @ColumnInfo(name = "phone")
+    val phone: String? = null
 )

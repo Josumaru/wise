@@ -26,6 +26,7 @@ android {
                 "proguard-rules.pro"
             )
         }
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -38,6 +39,7 @@ android {
         viewBinding = true
     }
 }
+
 
 dependencies {
 
@@ -72,4 +74,17 @@ dependencies {
     implementation(libs.androidx.camera.camera2)
     implementation(libs.camera.lifecycle)
     implementation(libs.camera.view)
+
+    // Shimmer
+    implementation(libs.shimmer)
+
+    // Html Ordered List
+    implementation(libs.html.textview)
+
+    // ListenableFuture
+    implementation(libs.guava)
+
+    // Location
+    implementation(libs.play.services.location)
+
 }

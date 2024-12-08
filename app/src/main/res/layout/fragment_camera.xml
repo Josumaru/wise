@@ -9,8 +9,9 @@
     tools:ignore="PrivateResource">
 
     <ImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:id="@+id/iv_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
         android:layout_marginStart="16dp"
         android:contentDescription="@string/click_to_back"
         android:src="@drawable/ic_back"

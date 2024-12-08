@@ -1,4 +1,4 @@
-package com.padangmurah.wise.data.source.remote.response
+package com.padangmurah.wise.data.source.remote.response.predict
 
 import com.google.gson.annotations.SerializedName
 

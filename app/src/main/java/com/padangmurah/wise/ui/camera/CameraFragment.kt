@@ -85,6 +85,10 @@ class CameraFragment : Fragment() {
             isFlashOn = !isFlashOn
         }
 
+        binding.ivBack.setOnClickListener {
+            requireActivity().onBackPressedDispatcher.onBackPressed()
+        }
+
         binding.cvCapture.setOnClickListener {
             capturePhoto()
         }
