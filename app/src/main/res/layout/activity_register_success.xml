@@ -8,37 +8,32 @@
     android:padding="16dp"
     android:background="@android:color/white">
 
-    <!-- Title Text -->
     <TextView
-        android:id="@+id/tv_title"
+        android:id="@+id/register_success"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password Berhasil Diganti"
+        android:text="Akun Berhasil Dibuat"
         android:textSize="24dp"
         android:textStyle="bold"
         android:textColor="@android:color/black"
         android:gravity="center"
-        android:layout_marginBottom="24dp" />
-
-    <!-- Success Icon -->
+        android:layout_marginBottom="24dp"/>
     <ImageView
-        android:id="@+id/iv_success"
+        android:id="@+id/checked"
         android:layout_width="221dp"
         android:layout_height="207dp"
         android:layout_marginBottom="32dp"
-        android:src="@drawable/baseline_check_circle_24" />
-
-    <!-- Button -->
+        android:src="@drawable/baseline_check_circle_24"/>
     <Button
         android:id="@+id/btn_back_to_login"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:text="Kembali ke halaman Login"
+        android:text="kembali ke halaman login"
+        android:background="@drawable/rounded_rectagle_button"
         android:textColor="@android:color/white"
-        android:textSize="16sp"
+        android:textSize="16dp"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_gravity="center"
-        android:background="@drawable/rounded_rectagle_button"/>
+        android:layout_marginEnd="16dp"/>
 </LinearLayout>
