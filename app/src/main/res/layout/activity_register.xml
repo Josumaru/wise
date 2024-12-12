@@ -135,7 +135,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_rectagle_button"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/md_theme_primary"
         android:text="Daftar"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"

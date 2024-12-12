@@ -1,7 +1,7 @@
 package com.padangmurah.wise.di
 
 import android.content.Context
-import com.padangmurah.wise.data.repository.AuthRepository
+import com.padangmurah.wise.data.repository.RegisterRepository
 import com.padangmurah.wise.data.repository.HistoryRepository
 import com.padangmurah.wise.data.repository.HospitalRepository
 import com.padangmurah.wise.data.repository.PredictRepository
@@ -12,12 +12,12 @@ import com.padangmurah.wise.util.AppExecutors
 object Injection {
 
     // Auth Dependency Injection
-    fun authInjection (context: Context): AuthRepository {
+    fun registerInjection (context: Context): RegisterRepository {
         val apiService = ApiConfig.getApiService()
         val database = WiseDatabase.getDatabase(context)
-        val authDao = database.authDao()
+        val registerDao = database.registerDao()
         val appExecutors = AppExecutors()
-        return AuthRepository.getInstance(apiService, authDao, appExecutors)
+        return RegisterRepository.getInstance(apiService, registerDao, appExecutors)
     }
 
     // History Dependency Injection
