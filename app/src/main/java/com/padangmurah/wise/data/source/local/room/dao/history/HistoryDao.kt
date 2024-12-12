@@ -13,10 +13,7 @@ interface HistoryDao {
     fun getAllHistory(): LiveData<List<HistoryEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertHistory(history: HistoryEntity)
-
-    @Query("DELETE FROM history WHERE id = :id")
-    fun deleteHistoryById(id: Int)
+    fun insertHistory(history: List<HistoryEntity>)
 
     @Query("DELETE FROM history")
     fun deleteAllHistory()

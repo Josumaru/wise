@@ -143,4 +143,6 @@
     <color name="md_theme_surfaceContainerHighest_highContrast">#E0E4DA</color>
     <color name="md_theme_active_icon">#45AF44</color>
     <color name="md_theme_in_active_icon">#CECECE</color>
+    <color name="md_theme_onboarding_card">#E5FFE7</color>
+    <color name="md_theme_foreground_text">#797979</color>
 </resources>
